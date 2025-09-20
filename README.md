@@ -12,6 +12,8 @@ Welcome all to my github repo of the **RISC-V SoC Tapeout Program by VSD**.
 
 From RTL to GDSII, This repository serves as the **master-log**, while each week’s detailed work has its own dedicated sub-repo.
 
+---
+
 <div align="center">
   
 > “From ideas in Verilog to metal on silicon — this is my path through the tapeout flow from documenting every step of my hands-on RISC-V SoC tapeout journey using open-source EDA tools." 

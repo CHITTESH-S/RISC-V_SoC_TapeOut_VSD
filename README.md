@@ -16,7 +16,7 @@ From RTL to GDSII, This repository serves as the **master-log**, while each week
 
 <div align="center">
   
-> “From ideas in Verilog to metal on silicon — this is my path through the tapeout flow from documenting every step of my hands-on RISC-V SoC tapeout journey using open-source EDA tools." 
+>“From ideas in Verilog to metal on silicon — this is my path through the tapeout flow from documenting every step of my hands-on RISC-V SoC tapeout journey using open-source EDA tools." 
 
 </div>
 

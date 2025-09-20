@@ -1,7 +1,11 @@
 ## 🧠 RISC-V SoC Tapeout Journey — VSD Program
 
+<div align="center">
+  
 > From RTL to GDSII, documenting every step of my hands-on RISC-V SoC tapeout journey using open-source EDA tools.  
 > This repository serves as the **master-log**, while each week’s detailed work has its own dedicated sub-repo.
+
+</div>
 
 ---
 

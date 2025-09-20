@@ -1,5 +1,13 @@
 ## 🧠 RISC-V SoC Tapeout Journey — VSD Program
 
+<div align="center">
+
+![RISC-V](https://img.shields.io/badge/RISC--V-SoC-orange?style=for-the-badge&logo=riscv)
+![VSD Program](https://img.shields.io/badge/VSD-Program-blue?style=for-the-badge)
+![Open-Source EDA](https://img.shields.io/badge/EDA-OpenSource-brightgreen?style=for-the-badge)
+
+</div>
+
 Welcome all to my github repo of the **RISC-V SoC Tapeout Program by VSD**.
 
 From RTL to GDSII, This repository serves as the **master-log**, while each week’s detailed work has its own dedicated sub-repo.
@@ -61,6 +69,18 @@ Each week is like a **milestone card**:
 - Convert RTL → gate-level netlist with Yosys  
 - Run gate-level simulation  
 - Compare RTL vs synthesized behavior 
+
+---
+
+## 📊 Progress Level
+
+<div align="center">
+
+![Week 0](https://img.shields.io/badge/Week%200-✅%20Done-green?style=for-the-badge)
+![Week 1](https://img.shields.io/badge/Week%201-⏳%20In%20Progress-yellow?style=for-the-badge)
+![Week 2](https://img.shields.io/badge/Week%202-Upcoming-blue?style=for-the-badge)
+
+</div>
 
 ---
 

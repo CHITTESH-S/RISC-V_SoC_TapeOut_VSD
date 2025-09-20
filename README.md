@@ -24,7 +24,7 @@ From RTL to GDSII, This repository serves as the **master-log**, while each week
 
 ## 🔍 Program Overview
 
-**🎯Objective:** Learn the complete SoC design flow and achieve a tapeout-ready design.  
+**🎯 Objective:** Learn the complete SoC design flow and achieve a tapeout-ready design.  
 
 **Why:**  
 - Gain hands-on experience with RTL, synthesis, physical design, and verification.  

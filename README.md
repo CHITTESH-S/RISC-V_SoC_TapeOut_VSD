@@ -62,15 +62,15 @@ Each week is like a **milestone card**:
 - Sample RTL simulation → waveform checks  
 - Basic OpenLane RTL → GDSII flow validation  
 
-### 🟡 Week 1 — RTL Design Basics ✍️ *(Current)*
+### 🟡 Week 1 — RTL Design Basics & Gate-Level Synthesis ✍️ *(Current)*
 - Writing modular Verilog designs  
 - Creating testbenches and simulating functionality  
-- Preparing modules for synthesis  
-
-### 🔵 Week 2 — Gate-Level Synthesis ⚡ *(Upcoming)*
+- Preparing modules for synthesis
 - Convert RTL → gate-level netlist with Yosys  
 - Run gate-level simulation  
-- Compare RTL vs synthesized behavior 
+- Compare RTL vs synthesized behavior
+
+### 🔵 Week 2 —  ⚡ *(Upcoming)*
 
 ---
 

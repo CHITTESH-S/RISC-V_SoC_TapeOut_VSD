@@ -8,9 +8,7 @@
 
 </div>
 
-Welcome all to my github repo of the **RISC-V SoC Tapeout Program by VSD**.
-
-From RTL to GDSII, This repository serves as the **master-log**, while each week’s detailed work has its own dedicated sub-repo.
+Welcome all to my GitHub repo for the **RISC-V SoC Tapeout Program by VSD** — the **master-log** for the tapeout journey. Each week has its own **sub-repo** with detailed labs, scripts, and results.
 
 ---
 
@@ -26,12 +24,15 @@ From RTL to GDSII, This repository serves as the **master-log**, while each week
 
 **🎯 Objective:** Learn the complete SoC design flow and achieve a tapeout-ready design.  
 
-**Why:**  
-- Gain hands-on experience with RTL, synthesis, physical design, and verification.  
-- Contribute to India’s semiconductor ecosystem.  
-- Document all stages for reproducibility and learning.  
+**❓ Why:**
 
-**Environment:** Ubuntu 22.04 + Open-source EDA toolchain.
+🔧 Gain hands-on experience with RTL, synthesis, physical design, and verification.
+
+🇮🇳 Contribute to India’s semiconductor ecosystem.
+
+📚 Create reproducible documentation for learning and collaboration.
+
+**🖥️ Environment:** Ubuntu 22.04 + open-source EDA toolchain
 
 ---
 
@@ -39,17 +40,27 @@ From RTL to GDSII, This repository serves as the **master-log**, while each week
 
 > The open-source stack powering this SoC journey:
 
-- 🟢 **Yosys** — RTL synthesis  
-- 🟢 **Icarus Verilog** — Simulation & testbenches  
-- 🟢 **GTKWave** — Waveform visualization  
-- 🟢 **Ngspice** — Circuit & mixed-signal simulation  
-- 🟢 **Magic** — Layout, DRC, LVS  
-- 🟢 **OpenLane** — RTL → GDSII full flow  
+✅ Icarus Verilog — simulation & testbenches.
+
+✅ GTKWave — waveform visualization.
+
+✅ Yosys — RTL synthesis and optimization.
+
+✅ Ngspice — circuit & mixed-signal simulation (where needed).
+
+✅ Magic — layout editing, DRC, LVS.
+
+✅ OpenLane — automated RTL → GDSII flow using Sky130 PDK.
+
+✅ SkyWater SKY130 PDK — standard-cell & design rules (local or containerized install).
 
 **Achievements in Week 0:**  
-- Installed all tools and configured environment variables.  
-- Verified sample RTL, simulation, and synthesis runs.  
-- Learned the importance of version consistency and paths.  
+
+🟢 Installed tools and validated presence: yosys -V, iverilog -v, gtkwave --version, openlane --version (where applicable).
+
+🧭 Configured environment variables and PATH entries for reproducibility (example .bashrc/.zshrc snippets included).
+
+🐳 Docker / Container Notes: prepared container image and docker-compose snippets for reproducible flows (OpenLane + PDK in container). 
 
 ---
 
@@ -58,17 +69,28 @@ From RTL to GDSII, This repository serves as the **master-log**, while each week
 Each week is like a **milestone card**:
 
 ### 🟢 Week 0 — Environment Setup ✅
-- Installed all tools and dependencies  
-- Sample RTL simulation → waveform checks  
-- Basic OpenLane RTL → GDSII flow validation  
 
-### 🟡 Week 1 — RTL Design Basics & Gate-Level Synthesis ✍️ *(Current)*
-- Writing modular Verilog designs  
-- Creating testbenches and simulating functionality  
-- Preparing modules for synthesis
-- Convert RTL → gate-level netlist with Yosys  
-- Run gate-level simulation  
-- Compare RTL vs synthesized behavior
+🟢 Installed tools and validated presence: yosys -V, iverilog -v, gtkwave --version, openlane --version (where applicable).
+
+🧭 Configured environment variables and PATH entries for reproducibility (example .bashrc/.zshrc snippets included).
+
+🐳 Docker / Container Notes: prepared container image and docker-compose snippets for reproducible flows (OpenLane + PDK in container).
+
+🔁 Backup & snapshot: PDK and critical tool artifacts backed up and hashed for future verification.
+
+### 🟢 Week 1 — RTL Design Basics & Gate-Level Synthesis ✅
+
+✍️ Verilog RTL to Simulation — Wrote modular RTL, created testbenches, simulated with Icarus Verilog, and visualized outputs in GTKWave.
+
+⏱️ Timing & Synthesis — Explored Sky130 .lib timing libraries, performed hierarchical vs flat synthesis, and reused submodules for efficiency.
+
+⚡ Optimizations — Applied Boolean simplification, shift-based multiplications, and pruning of unused logic; compared pre vs post optimization netlist stats in Yosys.
+
+🔗 Gate-Level Verification — Ran GLS on synthesized netlists, understood blocking vs non-blocking assignments, and identified synthesis–simulation mismatches.
+
+🧱 RTL-to-Hardware Mapping — Studied how if-else, case, and loops translate into gates, muxes, and flops; reinforced synthesis-friendly coding practices.
+
+🚀 Milestone Insight — Learned that Verilog = Hardware, synthesis tools are powerful but not magical, and disciplined RTL design is the first big step toward tapeout.
 
 ### 🔵 Week 2 —  ⚡ *(Upcoming)*
 
@@ -79,8 +101,9 @@ Each week is like a **milestone card**:
 <div align="center">
 
 ![Week 0](https://img.shields.io/badge/Week%200-✅%20Done-green?style=for-the-badge)
-![Week 1](https://img.shields.io/badge/Week%201-⏳%20In%20Progress-yellow?style=for-the-badge)
-![Week 2](https://img.shields.io/badge/Week%202-Upcoming-blue?style=for-the-badge)
+![Week 1](https://img.shields.io/badge/Week%201-✅%20Done-green?style=for-the-badge)
+![Week 2](https://img.shields.io/badge/Week%202-⏳%20In%20Progress-yellow?style=for-the-badge)
+![Week 3](https://img.shields.io/badge/Week%203-⏳%20Upcoming-blue?style=for-the-badge)
 
 </div>
 
@@ -88,19 +111,25 @@ Each week is like a **milestone card**:
 
 ## 🔮 Roadmap & Next Steps
 
-- Complete **Week 1 RTL modules** and testbench verification.  
-- Move to **Week 2 synthesis & gate-level simulation**.  
-- Start documenting **physical design steps** and timing constraints.  
-- Maintain weekly reflections and update the master log.  
+🔁 Week-2: deep dive into synthesis optimization, STA, and gate-level validation.
+
+🏗️ Physical Design: floorplanning, placement & routing, DRC/LVS iterations (OpenLane + Magic).
+
+🧾 Tapeout prep: final sign-off checks, GDSII generation, and submission packaging.
+
+📤 Documentation: weekly logs, reproducible scripts, and final “tapeout cookbook”.
 
 ---
 
 ## 🙏 Acknowledgments
 
-- **VSD Team & Kunal Ghosh** — mentoring & guidance  
-- **Efabless & RISC-V International** — enabling collaborative tapeouts  
-- **Open-source EDA community** — providing tools & tutorials  
-- **Peers & instructors** — helping debug & conceptualize  
+🤝 VSD Team & Kunal Ghosh — mentoring & guidance.
+
+🌐 Efabless & RISC-V International — enabling collaborative tapeouts.
+
+🛠️ Open-source EDA community — tools, tutorials, and example flows.
+
+👥 Peers & instructors — debugging help & design reviews.
 
 ---
 

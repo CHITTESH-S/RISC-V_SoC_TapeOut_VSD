@@ -137,6 +137,8 @@ Each week is like a **milestone card**:
 
 👉 **Week-1 Repository Link:** https://github.com/CHITTESH-S/Week-1_RISC-V_SoC_TapeOut
 
+👉 **Week-2 Repository Link:** https://github.com/CHITTESH-S/Week-2_RISC-V_SoC_TapeOut
+
 > *“Designing a chip is a journey — every checkpoint counts, every reflection matters, and each milestone brings you closer to tapeout.”*
 
 👨‍💻 **Contributor:** [Chittesh S](https://github.com/CHITTESH-S)

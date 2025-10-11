@@ -102,8 +102,9 @@ Each week is like a **milestone card**:
 
 ![Week 0](https://img.shields.io/badge/Week%200-✅%20Done-green?style=for-the-badge)
 ![Week 1](https://img.shields.io/badge/Week%201-✅%20Done-green?style=for-the-badge)
-![Week 2](https://img.shields.io/badge/Week%202-⏳%20In%20Progress-yellow?style=for-the-badge)
-![Week 3](https://img.shields.io/badge/Week%203-⏳%20Upcoming-blue?style=for-the-badge)
+![Week 2](https://img.shields.io/badge/Week%202-✅%20Done-green?style=for-the-badge)
+![Week 3](https://img.shields.io/badge/Week%203-⏳%20In%20Progress-yellow?style=for-the-badge)
+![Week 4](https://img.shields.io/badge/Week%204-⏳%20Upcoming-blue?style=for-the-badge)
 
 </div>
 

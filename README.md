@@ -103,8 +103,12 @@ Each week is like a **milestone card**:
 ![Week 0](https://img.shields.io/badge/Week%200-✅%20Done-green?style=for-the-badge)
 ![Week 1](https://img.shields.io/badge/Week%201-✅%20Done-green?style=for-the-badge)
 ![Week 2](https://img.shields.io/badge/Week%202-✅%20Done-green?style=for-the-badge)
-![Week 3](https://img.shields.io/badge/Week%203-⏳%20In%20Progress-yellow?style=for-the-badge)
-![Week 4](https://img.shields.io/badge/Week%204-⏳%20Upcoming-blue?style=for-the-badge)
+![Week 3](https://img.shields.io/badge/Week%203-✅%20Done-green?style=for-the-badge)
+![Week 4](https://img.shields.io/badge/Week%204-✅%20Done-green?style=for-the-badge)
+![Week 5](https://img.shields.io/badge/Week%205-✅%20Done-green?style=for-the-badge)
+![Week 6](https://img.shields.io/badge/Week%206-✅%20Done-green?style=for-the-badge)
+![Week 7](https://img.shields.io/badge/Week%207-✅%20Done-green?style=for-the-badge)
+![Week 8](https://img.shields.io/badge/Week%208-✅%20Done-green?style=for-the-badge)
 
 </div>
 
@@ -139,6 +143,18 @@ Each week is like a **milestone card**:
 👉 **Week-1 Repository Link:** https://github.com/CHITTESH-S/Week-1_RISC-V_SoC_TapeOut
 
 👉 **Week-2 Repository Link:** https://github.com/CHITTESH-S/Week-2_RISC-V_SoC_TapeOut
+
+👉 **Week-3 Repository Link:** https://github.com/CHITTESH-S/Week-3_RISC-V_SoC_TapeOut
+
+👉 **Week-4 Repository Link:** https://github.com/CHITTESH-S/Week-4_RISC-V_SoC_TapeOut
+
+👉 **Week-5 Repository Link:** https://github.com/CHITTESH-S/Week-5_RISC-V_SoC_TapeOut
+
+👉 **Week-6 Repository Link:** https://github.com/CHITTESH-S/Week-6_RISC-V_SoC_TapeOut
+
+👉 **Week-7 Repository Link:** https://github.com/CHITTESH-S/Week-7_RISC-V_SoC_TapeOut
+
+👉 **Week-8 Repository Link:** https://github.com/CHITTESH-S/Week-8_RISC-V_SoC_TapeOut
 
 > *“Designing a chip is a journey — every checkpoint counts, every reflection matters, and each milestone brings you closer to tapeout.”*
 

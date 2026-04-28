@@ -26,9 +26,9 @@ Welcome all to my GitHub repo for the **RISC-V SoC Tapeout Program by VSD** — 
 
 **❓ Why:**
 
-🔧 Gain hands-on experience with RTL, synthesis, physical design, and verification.
+- 🔧 Gain hands-on experience with RTL, synthesis, physical design, and verification.
 
-🇮🇳 Contribute to India’s semiconductor ecosystem.
+- 🇮🇳 Contribute to India’s semiconductor ecosystem.
 
 📚 Create reproducible documentation for learning and collaboration.
 
@@ -70,27 +70,99 @@ Each week is like a **milestone card**:
 
 ### 🟢 Week 0 — Environment Setup ✅
 
-🟢 Installed tools and validated presence: yosys -V, iverilog -v, gtkwave --version, openlane --version (where applicable).
+🛠️ Toolchain Setup & Validation — Installed and verified Yosys, Icarus Verilog, GTKWave, Ngspice, Magic, and OpenLane on Ubuntu 22.04 for RTL-to-GDSII flow.
 
-🧭 Configured environment variables and PATH entries for reproducibility (example .bashrc/.zshrc snippets included).
+🐳 Environment Configuration — Configured PATH variables, dependencies, and system environment ensuring reproducible and stable tool execution.
 
-🐳 Docker / Container Notes: prepared container image and docker-compose snippets for reproducible flows (OpenLane + PDK in container).
+🧪 Initial Simulation & Synthesis — Ran sample RTL simulations (Icarus Verilog + GTKWave) and performed basic synthesis using Yosys to validate setup.
 
-🔁 Backup & snapshot: PDK and critical tool artifacts backed up and hashed for future verification.
+📂 Version Control & Repository Setup — Initialized and structured GitHub repositories for week-wise documentation and project tracking.
+
+🧠 SoC Design Flow Understanding — Learned complete RISC-V SoC flow from C model (O0) → RTL (O2) → SoC integration (O3) → GDSII (O4).
+
+🔄 Design Consistency Principle — Understood functional equivalence (O0 = O1 = O2 = O3 = O4) ensuring correctness across all abstraction levels.
+
+🚀 Milestone Insight — Established a fully functional VLSI design environment and built strong foundation in end-to-end ASIC design flow.
 
 ### 🟢 Week 1 — RTL Design Basics & Gate-Level Synthesis ✅
 
-✍️ Verilog RTL to Simulation — Wrote modular RTL, created testbenches, simulated with Icarus Verilog, and visualized outputs in GTKWave.
+✍️ RTL Design & Testbench Development — Wrote synthesizable Verilog RTL modules and created structured testbenches (stimulus, UUT, observer) for functional verification.
 
-⏱️ Timing & Synthesis — Explored Sky130 .lib timing libraries, performed hierarchical vs flat synthesis, and reused submodules for efficiency.
+🧪 Simulation & Waveform Analysis — Performed RTL simulation using Icarus Verilog and analyzed signal behavior via GTKWave.
 
-⚡ Optimizations — Applied Boolean simplification, shift-based multiplications, and pruning of unused logic; compared pre vs post optimization netlist stats in Yosys.
+⚙️ Logic Synthesis (Yosys + Sky130) — Converted RTL into gate-level netlists using Yosys with Sky130 standard-cell libraries (.lib).
 
-🔗 Gate-Level Verification — Ran GLS on synthesized netlists, understood blocking vs non-blocking assignments, and identified synthesis–simulation mismatches.
+📚 Timing Library Understanding — Explored Liberty (.lib) files including timing arcs, setup/hold constraints, PVT corners, and power/area trade-offs.
 
-🧱 RTL-to-Hardware Mapping — Studied how if-else, case, and loops translate into gates, muxes, and flops; reinforced synthesis-friendly coding practices.
+🏗️ Hierarchical vs Flat Synthesis — Compared modular (hierarchical) and global (flat) synthesis flows for optimization vs readability.
 
-🚀 Milestone Insight — Learned that Verilog = Hardware, synthesis tools are powerful but not magical, and disciplined RTL design is the first big step toward tapeout.
+🔁 Submodule & IP Reuse Strategy — Practiced submodule synthesis enabling scalable and reusable hardware design.
+
+⚡ RTL & Logic Optimizations — Applied Boolean simplification, constant propagation, shift-based multiplications, and pruning of unused logic.
+
+🧠 Sequential Logic & Flip-Flops — Studied flip-flop coding styles (sync/async reset, enable) and their impact on timing and stability.
+
+🔍 Gate-Level Simulation (GLS) — Verified synthesized netlists using GLS flow to ensure RTL–netlist functional equivalence.
+
+⚠️ Coding Discipline & Mismatch Debugging — Identified synthesis–simulation mismatches caused by improper sensitivity lists, blocking/non-blocking misuse, and non-synthesizable constructs.
+
+🔀 Hardware Mapping of RTL Constructs — Analyzed how if-else, case, loops, and generate blocks translate into muxes, combinational logic, and sequential elements.
+
+🚀 Milestone Insight — Established strong foundation in RTL design, timing-aware synthesis, and hardware mapping, realizing that Verilog directly defines physical hardware behavior.
+
+### 🟢 Week 2 — SoC Fundamentals & Functional Modelling (VSDBabySoC) ✅
+
+🧠 SoC Architecture Understanding — Studied System-on-Chip fundamentals, including CPU, memory, interconnects, peripherals, and power management trade-offs.
+
+🍼 VSDBabySoC System Analysis — Analyzed PLL → RISC-V (RVMYTH) → DAC architecture, understanding complete data flow from clock generation to analog output.
+
+⚡ Mixed-Signal Design Concepts — Explored digital–analog interaction, DAC behavior, and system-level signal flow in mixed-signal SoC design.
+
+🔁 TL-Verilog to Verilog Conversion — Converted RVMYTH core from TL-Verilog to synthesizable Verilog using SandPiper-SaaS.
+
+🧪 Functional Simulation Setup — Performed pre-synthesis simulation using Icarus Verilog for complete SoC design validation.
+
+📊 Waveform Analysis (GTKWave) — Analyzed key signals (clk, reset, pll_locked, pc, RV_TO_DAC, OUT) to verify correct system behavior.
+
+🔍 Testbench-Driven Verification — Used structured testbench to validate CPU execution, DAC interfacing, and system sequencing.
+
+⏱️ Startup & Clock Sequencing — Verified PLL lock behavior and reset synchronization, ensuring proper system initialization.
+
+📈 Signal-Level Validation — Observed DAC staircase output and confirmed correct mapping of digital CPU output to analog behavior.
+
+🧩 Verification Methodology — Applied functional modelling principles to detect bugs early before synthesis and physical design stages.
+
+🚀 Milestone Insight — Established strong understanding of SoC-level integration, mixed-signal behavior, and pre-synthesis functional verification, bridging RTL design with real system operation.
+
+### 🟢 Week 3 — Post-Synthesis Validation & Static Timing Analysis (GLS + STA) ✅
+
+🧩 Gate-Level Netlist Generation — Synthesized RTL into gate-level netlist using Yosys, mapping design to standard-cell libraries.
+
+🧪 Post-Synthesis Simulation (GLS) — Verified synthesized netlist functionality using Icarus Verilog to ensure no logic mismatches after synthesis.
+
+📊 Waveform Comparison (GTKWave) — Compared pre-synthesis and post-synthesis waveforms using GTKWave to validate identical system behavior.
+
+🔍 RTL vs Netlist Equivalence — Confirmed that synthesis preserved functionality across all test vectors with no mismatches.
+
+⚙️ Synthesis Optimization Awareness — Applied optimization steps (opt, abc, dfflibmap) and analyzed impact on gate-level structure and performance.
+
+🧠 Static Timing Analysis Fundamentals — Learned core STA concepts including setup/hold checks, timing paths, clock domains, and delay modeling.
+
+🧮 Slack Analysis (WNS/TNS) — Evaluated timing health using Worst Negative Slack (WNS) and Total Negative Slack (TNS) metrics.
+
+⏰ Clock & Constraint Modeling — Defined clocks, generated clocks (PLL), uncertainties, and I/O delays using SDC constraints.
+
+🔗 Timing Path Analysis — Explored different path types (reg→reg, input→reg, reg→output) and identified critical paths affecting performance.
+
+🛠️ OpenSTA Timing Verification — Performed STA using OpenSTA to generate timing reports and validate timing closure.
+
+🌡️ PVT Corner Analysis — Analyzed timing across multiple process-voltage-temperature corners to ensure robust design performance.
+
+⚠️ Timing Violation Debugging — Identified causes of setup/hold violations and explored fixes like buffering, retiming, and cell sizing.
+
+📉 Parasitic Awareness (SPEF) — Understood impact of interconnect delays and capacitance on timing through parasitic-aware analysis.
+
+🚀 Milestone Insight — Achieved full post-synthesis validation by ensuring both functional correctness and timing closure, bridging the gap between RTL design and silicon-ready implementation.
 
 ---
 

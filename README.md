@@ -64,6 +64,24 @@ Welcome all to my GitHub repo for the **RISC-V SoC Tapeout Program by VSD** — 
 
 ---
 
+## 📊 Progress Level
+
+<div align="center">
+
+![Week 0](https://img.shields.io/badge/Week%200-✅%20Done-green?style=for-the-badge)
+![Week 1](https://img.shields.io/badge/Week%201-✅%20Done-green?style=for-the-badge)
+![Week 2](https://img.shields.io/badge/Week%202-✅%20Done-green?style=for-the-badge)
+![Week 3](https://img.shields.io/badge/Week%203-✅%20Done-green?style=for-the-badge)
+![Week 4](https://img.shields.io/badge/Week%204-✅%20Done-green?style=for-the-badge)
+![Week 5](https://img.shields.io/badge/Week%205-✅%20Done-green?style=for-the-badge)
+![Week 6](https://img.shields.io/badge/Week%206-✅%20Done-green?style=for-the-badge)
+![Week 7](https://img.shields.io/badge/Week%207-✅%20Done-green?style=for-the-badge)
+![Week 8](https://img.shields.io/badge/Week%208-✅%20Done-green?style=for-the-badge)
+
+</div>
+
+---
+
 ## 🗓️ Weekly Journey & Checkpoints
 
 Each week is like a **milestone card**:
@@ -163,34 +181,6 @@ Each week is like a **milestone card**:
 📉 Parasitic Awareness (SPEF) — Understood impact of interconnect delays and capacitance on timing through parasitic-aware analysis.
 
 🚀 Milestone Insight — Achieved full post-synthesis validation by ensuring both functional correctness and timing closure, bridging the gap between RTL design and silicon-ready implementation.
-
----
-
-## 📊 Progress Level
-
-<div align="center">
-
-![Week 0](https://img.shields.io/badge/Week%200-✅%20Done-green?style=for-the-badge)
-![Week 1](https://img.shields.io/badge/Week%201-✅%20Done-green?style=for-the-badge)
-![Week 2](https://img.shields.io/badge/Week%202-✅%20Done-green?style=for-the-badge)
-![Week 3](https://img.shields.io/badge/Week%203-✅%20Done-green?style=for-the-badge)
-![Week 4](https://img.shields.io/badge/Week%204-✅%20Done-green?style=for-the-badge)
-![Week 5](https://img.shields.io/badge/Week%205-✅%20Done-green?style=for-the-badge)
-![Week 6](https://img.shields.io/badge/Week%206-✅%20Done-green?style=for-the-badge)
-![Week 7](https://img.shields.io/badge/Week%207-✅%20Done-green?style=for-the-badge)
-![Week 8](https://img.shields.io/badge/Week%208-✅%20Done-green?style=for-the-badge)
-
-</div>
-
----
-
-## 🔮 Roadmap & Next Steps
-
-🏗️ Physical Design: floorplanning, placement & routing, DRC/LVS iterations (OpenLane + Magic).
-
-🧾 Tapeout prep: final sign-off checks, GDSII generation, and submission packaging.
-
-📤 Documentation: weekly logs, reproducible scripts, and final “tapeout cookbook”.
 
 ---
 

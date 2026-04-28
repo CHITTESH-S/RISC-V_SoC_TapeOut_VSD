@@ -92,8 +92,6 @@ Each week is like a **milestone card**:
 
 🚀 Milestone Insight — Learned that Verilog = Hardware, synthesis tools are powerful but not magical, and disciplined RTL design is the first big step toward tapeout.
 
-### 🔵 Week 2 —  ⚡ *(Upcoming)*
-
 ---
 
 ## 📊 Progress Level
@@ -115,8 +113,6 @@ Each week is like a **milestone card**:
 ---
 
 ## 🔮 Roadmap & Next Steps
-
-🔁 Week-2: deep dive into synthesis optimization, STA, and gate-level validation.
 
 🏗️ Physical Design: floorplanning, placement & routing, DRC/LVS iterations (OpenLane + Magic).
 
